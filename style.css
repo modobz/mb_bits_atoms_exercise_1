@@ -1,0 +1,76 @@
+/* I partially followed this tutorial: 
+https://youtu.be/qXRYMdvq_Dc */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e2535;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Don't mess with this! */
+.card {
+  width: 300px;
+  height: 540px;
+  margin: 40px auto 0 auto;
+}
+
+.card {
+  background-image: linear-gradient(#d0e3f3, #d7a5a7);
+  border-radius: 5px;
+  padding: 15px;
+  color: #1e2535;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-image {
+  background-image: url("https://pbs.twimg.com/media/EI-jgReWwAEITZG?format=jpg&name=4096x4096");
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.card h1 {
+  color: #695770;
+}
+.card h1,
+h4,
+p {
+  padding: 5px;
+  text-align: justify;
+}
+.card p {
+  margin-top: 10px;
+}
+
+.card a {
+  padding: 15px 20px;
+  background-color: #695770;
+  color: white;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+.card a:hover {
+  background-color: white;
+  color: #695770;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px 10px #f9bf8f;
+}
